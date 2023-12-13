@@ -1,0 +1,213 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: black;
+  font-family: sans-serif;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+  cursor: pointer;
+  color: orange;
+  font-size: 18px;
+  position: relative;
+  text-transform: uppercase;
+}
+li::after {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  width: 0;
+  left: 0;
+  height: 2px;
+  background-color: orange;
+  transition: 0.4s;
+}
+li:hover::after {
+  width: 100%;
+}
+#header {
+  background: #2c2d2f;
+  padding: 10px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header a {
+  background: orange;
+  color: wheat;
+  font-size: 30px;
+  padding: 15px 8px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  outline: none;
+  font-weight: 800;
+}
+.header button {
+  padding: 10px 80px;
+  background: black;
+  font-size: 20px;
+  border-radius: 8px;
+  color: orange;
+  border: 2px solid orange;
+}
+.header button:hover {
+  background: rgb(70, 69, 69);
+}
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+.hero-text h1 {
+  font-size: 60px;
+  color: wheat;
+  text-align: center;
+  font-weight: 900;
+  padding: 20px 0 50px 0;
+}
+.hero-text h1 span {
+  color: orange;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.buttons button {
+  padding: 10px 80px;
+  background: none;
+  font-size: 20px;
+  border-radius: 8px;
+  color: orange;
+  border: 1px solid rgb(89, 87, 87);
+  box-shadow: 8px 8px 4px rgb(100, 81, 81);
+}
+.hero-slide {
+  margin: 200px 0 0 0;
+  border: 2px solid orange;
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+}
+.slider {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border: 3px solid orange;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  position: relative;
+}
+.slide.active-slide {
+  opacity: 1;
+}
+.slide {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+.slide-card {
+  color: rgb(255, 255, 255);
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+}
+.btn-slide {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: orange;
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 50%;
+  font-weight: 800;
+  z-index: 1;
+}
+
+.slide-card h3 {
+  text-transform: uppercase;
+  font-size: 22px;
+  color: white;
+}
+.slide-card p {
+  font-size: 16px;
+  text-align: justify;
+  margin: 10px 0;
+  color: white;
+}
+.slide-card a {
+  color: orange;
+  text-decoration: underline;
+}
+.urok {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 100px 0;
+}
+.urok h2 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: 900;
+  padding: 0 0 40px 0;
+}
+#footer {
+  background: #2c2d2f;
+}
+.inner-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+.inner-footer a {
+  font-size: 32px;
+  color: orange;
+  text-transform: uppercase;
+}
+.bottle {
+  padding: 100px 0;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.btns button {
+  border: 2px solid orange;
+  padding: 8px 30px;
+  font-size: 22px;
+  font-weight: 900;
+  border-radius: 8px;
+}
+#car {
+  position: relative;
+  left: 0;
+  transition: left 0.5s ease;
+}

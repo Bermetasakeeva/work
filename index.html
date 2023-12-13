@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomeWork</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="header">
+          <a  href="">javascript</a>
+          <ul>
+            <li>home works</li>
+            <li>lessons</li>
+            <li>cards</li>
+          </ul>
+          <button>Click me!</button>
+        </div>
+      </div>
+    </header>
+    <section id="hero">
+      <div class="container">
+        <div class="hero">
+          <div class="hero-text">
+            <h1>
+              <span class="js">JAVASCRIPT</span> - НА САМОМ ДЕЛЕ ОЧЕНЬ ЛЕГКО И ПРОСТО!
+            </h1>
+            <div class="buttons">
+              <button class="btn sty1">orange </button>
+              <button class="btn sty2">yellow</button>
+              <button class="btn sty3">green</button>
+              <button class="btn sty4">pink</button>
+              <audio class="au" src="./img/knopka-inoplanetnogo-pribora1.mp3"></audio>
+            </div>
+          </div>
+          <div class="hero-slide">
+            <div class="slider">
+              <button class="btn-slide" id="prev">prev</button>
+              <div style="opacity: 1;" class="slide active-slide">
+                <div class="slide-card">
+                  <h3>REGULAR EXPRESSION</h3>
+                  <p>
+                    Простыми словами, регулярное выражение - это набор символов,
+                    который задает определенные правила для поиска и
+                    сопоставления текста. Вы можете использовать регулярные
+                    выражения, чтобы найти определенные строки в тексте,
+                    заменить части строки на другие значения или извлечь нужную
+                    информацию из текста.
+                  </p>
+                  <a href="">узнать подробнее</a>
+                </div>
+              </div>
+              <div style="opacity: 0;"  class="slide active-slide">
+                <div class="slide-card">
+                    <h3>RECURSION</h3>
+                <p>
+                  Простыми словами, рекурсия - это, когда функция делает
+                  повторяющиеся вызовы самой себя для решения задачи, пока не
+                  достигнет определенного условия выхода из рекурсии.
+                </p>
+                <a href="">узнать подробнее</a>
+                </div>
+              
+              </div>
+              <div style="opacity: 0;"  class="slide active-slide">
+                <div class="slide-card">
+                  <h3>JSON</h3>
+                <p>
+                  Простыми словами, JSON - это способ представления данных в
+                  виде текста, чтобы они могли быть легко поняты и использованы
+                  различными программами. Он использует простые правила для
+                  описания объектов и массивов, а также для представления
+                  простых типов данных, таких как строки, числа, логические
+                  значения и т.д.
+                </p>
+                <a href="">узнать подробнее</a>
+                </div>
+                
+              </div>
+              <div  style="opacity: 0;" class="slide active-slide">
+                <div class="slide-card">
+                   <h3>EVENT LOOP</h3>
+                <p>
+                  Простыми словами, event loop похож на дежурного, который
+                  непрерывно проверяет, произошло ли какое-либо событие, и
+                  реагирует на него, когда оно происходит. Он имеет список
+                  задач, которые нужно выполнить, и он перебирает этот список
+                  событий одно за другим, обрабатывая каждое событие, когда оно
+                  наступает.
+                </p>
+                <a href="">узнать подробнее</a>
+                </div>
+               
+              </div>
+              <button class="btn-slide" id="next">next</button>
+            </div>
+          </div>
+          <div class="bottle">
+              <img id="car" src="./img/bb.png" alt="">
+          </div>
+          <div class="urok">
+            <h2>ПОЛЕЗНЫЙ РОЛИК ПРО EVENT LOOP</h2>
+            <iframe
+              width="960"
+              height="415"
+              src="https://www.youtube.com/embed/zDlg64fsQow?si=OUMQzof8O9jEhClo"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="inner-footer">
+        <a href="">made by inai</a>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+
+<script>
+  const car = document.getElementById('car');
+
+  function moveCar(event) {
+    const currentLeft = parseInt(car.style.left) || 0;
+    if (event.key === 'ArrowRight') {
+      car.style.left = (currentLeft + 10) + 'px';
+    } else if (event.key === 'ArrowLeft') {
+      car.style.left = (currentLeft - 10) + 'px';
+    }
+  }
+
+  document.addEventListener('keydown', moveCar);
+</script>
+  </body>
+</html>
